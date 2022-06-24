@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<fx:root alignment="CENTER" spacing="4.0" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-empty" stylesheets="@wordle-lookalike.css">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" fx:id="text1" styleClass="my-letter"  />
+    </StackPane>
+    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-empty" stylesheets="@wordle-lookalike.css">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" fx:id="text2" styleClass="my-letter" />
+    </StackPane>
+    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-empty" stylesheets="@wordle-lookalike.css">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" fx:id="text3" styleClass="my-letter" />
+    </StackPane>
+    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-empty" stylesheets="@wordle-lookalike.css">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" fx:id="text4" styleClass="my-letter" />
+    </StackPane>
+    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-empty" stylesheets="@wordle-lookalike.css">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" fx:id="text5" styleClass="my-letter" />
+    </StackPane>
+</fx:root>

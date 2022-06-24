@@ -1,0 +1,37 @@
+.my-letter-box-empty {
+    -fx-border-color: grey;
+    -fx-border-style: solid;
+    -fx-border-width: 2;
+}
+.my-letter-box-filled {
+    -fx-background-color: grey;
+}
+.my-letter {
+    -fx-fill: white;
+    -fx-font: normal bold 40 sans-serif;
+    -fx-text-alignment: center;
+    -fx-font-smoothing-type: gray;
+    -fx-effect: dropshadow(gaussian, black, 10, 0.5, 2, 2);
+}
+.my-key {
+    -fx-fill: white;
+    -fx-font: normal bold 20 sans-serif;
+    -fx-text-alignment: center;
+    -fx-font-smoothing-type: gray;
+}
+.my-key-unknown {
+    -fx-background-radius: 4;
+    -fx-background-color: darkgrey;
+}
+.my-key-yes {
+    -fx-background-radius: 4;
+    -fx-background-color: yellowgreen;
+}
+.my-key-no {
+    -fx-background-radius: 4;
+    -fx-background-color: lightgrey;
+}
+.my-key-maybe {
+    -fx-background-radius: 4;
+    -fx-background-color: sandybrown;
+}
