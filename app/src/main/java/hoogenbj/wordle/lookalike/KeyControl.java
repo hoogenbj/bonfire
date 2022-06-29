@@ -43,6 +43,9 @@ public class KeyControl extends StackPane implements Initializable {
             if (newState != null && !newState.equals(oldState)) {
                 if (newState == KeyStroke.State.Typed) {
                     flashKey(oldState, newState);
+                } else if (newState == KeyStroke.State.No) {
+                    getStyleClass().clear();
+                    getStyleClass().add(newState.getCssClass());
                 }
             }
         });

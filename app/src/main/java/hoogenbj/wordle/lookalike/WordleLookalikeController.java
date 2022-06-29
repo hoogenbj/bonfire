@@ -94,7 +94,11 @@ public class WordleLookalikeController {
                     if (words.get(currentWord).letterCount() == 5) {
                         Letter.State[] states = evaluator.compare(words.get(currentWord).getWord());
                         for (int i=0; i< states.length; i++) {
-                            words.get(currentWord).getLetter(i).stateProperty().set(states[i]);
+                            Letter letter = words.get(currentWord).getLetter(i);
+                            letter.stateProperty().set(states[i]);
+                            if (states[i].equals(Letter.State.No)) {
+                                Keyboard.lookup(letter.getLetter().toUpperCase()).stateProperty().set(KeyStroke.State.No);
+                            }
                         }
                         if (Arrays.stream(states).allMatch(state -> state.equals(Letter.State.Yes))) {
                             Alert alert = new Alert(Alert.AlertType.INFORMATION,

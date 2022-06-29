@@ -35,7 +35,7 @@
 }
 .my-key-no {
     -fx-background-radius: 4;
-    -fx-background-color: lightgrey;
+    -fx-background-color: black;
 }
 .my-key-flash {
     -fx-background-radius: 4;
