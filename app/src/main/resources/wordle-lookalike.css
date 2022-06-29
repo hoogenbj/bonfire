@@ -1,10 +1,16 @@
-.my-letter-box-empty {
+.my-letter-box-unknown {
     -fx-border-color: grey;
     -fx-border-style: solid;
     -fx-border-width: 2;
 }
-.my-letter-box-filled {
-    -fx-background-color: grey;
+.my-letter-box-yes {
+    -fx-background-color: yellowgreen;
+}
+.my-letter-box-no {
+    -fx-background-color: lightgrey;
+}
+.my-letter-box-maybe {
+    -fx-background-color: sandybrown;
 }
 .my-letter {
     -fx-fill: white;
@@ -31,7 +37,7 @@
     -fx-background-radius: 4;
     -fx-background-color: lightgrey;
 }
-.my-key-maybe {
+.my-key-flash {
     -fx-background-radius: 4;
-    -fx-background-color: sandybrown;
+    -fx-background-color: lightgrey;
 }
