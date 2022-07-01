@@ -33,7 +33,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'hoogenbj.wordle.lookalike.App'
+    mainClass = 'hoogenbj.wordle.lookalike.WordleClone'
     mainModule = 'wordle.helper.app.main'
 }
 
@@ -58,8 +58,8 @@ jlink {
                 '--copyright', "JA Hoogenboezem 2022",
                 '--description', "A Wordle clone - to demonstrate JavaFX",
                 '--license-file', "src/main/resources/LICENSE.txt",
-                '--mac-package-identifier', "WordleClone",
-                '--mac-package-name', "Wordle Clone"
+                '--mac-package-identifier', "hoogenbj.WordleClone",
+                '--mac-package-name', "WordleClone"
         ]
     }
 }

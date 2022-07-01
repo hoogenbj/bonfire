@@ -76,6 +76,9 @@ public class WordControl extends HBox implements Initializable {
         });
     }
 
+    /**
+     * Show animation when changing a letter's state changes
+     */
     private void flipTransition(StackPane box, Letter.State newValue) {
         ScaleTransition disappear = new ScaleTransition(Duration.millis(300), box);
         disappear.setFromY(1);

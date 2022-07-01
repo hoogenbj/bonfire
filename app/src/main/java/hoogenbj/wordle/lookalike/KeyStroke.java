@@ -1,11 +1,13 @@
 package hoogenbj.wordle.lookalike;
 
 import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.SimpleStringProperty;
 
+/**
+ * Data binding is used to react when a key is pressed on the keyboard.
+ */
 public class KeyStroke {
     enum State {
-        Unknown("my-key-unknown"), Yes("my-key-yes"), No("my-key-no"), Typed("my-key-flash");
+        Unknown("my-key-unknown"), No("my-key-no"), Typed("my-key-flash");
         private String cssClass;
         State(String cssClass) {
             this.cssClass = cssClass;
@@ -17,26 +19,19 @@ public class KeyStroke {
     }
 
     public KeyStroke(String key) {
-        setKeyStroke(key);
+        setKey(key);
         setState(State.Unknown);
     }
 
     private SimpleObjectProperty<State> stateProperty;
-    private SimpleStringProperty keyStroke;
+    private String key;
 
-    public String getKeyStroke() {
-        return keyStroke.get();
+    public String getKey() {
+        return key;
     }
 
-    public SimpleStringProperty keyStrokeProperty() {
-        if (keyStroke == null) {
-            keyStroke = new SimpleStringProperty(this, "keyStroke");
-        }
-        return keyStroke;
-    }
-
-    public void setKeyStroke(String keyStroke) {
-        this.keyStrokeProperty().set(keyStroke);
+    public void setKey(String key) {
+        this.key = key;
     }
 
     public State getState() {

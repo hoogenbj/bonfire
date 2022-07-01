@@ -12,6 +12,10 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * A custom control representing a key in the on-screen keyboard. Responsible for providing the user
+ * with the means to type a key and to get feedback
+ */
 public class KeyControl extends StackPane implements Initializable {
 
     @FXML
@@ -38,7 +42,7 @@ public class KeyControl extends StackPane implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        keyText.setText(keyStroke.getKeyStroke());
+        keyText.setText(keyStroke.getKey());
         keyStroke.stateProperty().addListener((observable, oldState, newState) -> {
             if (newState != null && !newState.equals(oldState)) {
                 if (newState == KeyStroke.State.Typed) {

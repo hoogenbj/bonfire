@@ -5,12 +5,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
+/**
+ * Represents the on-screen keyboard
+ */
 public class Keyboard {
     private final List<KeyStroke> upper;
     private final List<KeyStroke> middle;
     private final List<KeyStroke> lower;
 
-    private static Map<String, KeyStroke> lookup = new HashMap<>();
+    private static final Map<String, KeyStroke> lookup = new HashMap<>();
 
     public Keyboard() {
         upper = Stream.of("Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P").map(this::makeKeyStroke).toList();

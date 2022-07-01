@@ -2,8 +2,11 @@ package hoogenbj.wordle.lookalike;
 
 import java.util.Arrays;
 
+/**
+ * A Word comprises exactly 5 letters.
+ */
 public class Word {
-    private Letter[] letters = new Letter[]{
+    private final Letter[] letters = new Letter[]{
             new Letter(), new Letter(), new Letter(), new Letter(), new Letter()
     };
     private int cursor = -1;

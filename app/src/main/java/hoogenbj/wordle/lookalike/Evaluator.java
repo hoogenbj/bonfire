@@ -1,5 +1,9 @@
 package hoogenbj.wordle.lookalike;
 
+/**
+ * Checks the candidate against the target word and returns state values that can be used to provide feedback
+ * to the user
+ */
 public class Evaluator {
     private final String targetWord;
 

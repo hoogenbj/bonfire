@@ -27,15 +27,11 @@
 }
 .my-key-unknown {
     -fx-background-radius: 4;
-    -fx-background-color: darkgrey;
-}
-.my-key-yes {
-    -fx-background-radius: 4;
-    -fx-background-color: yellowgreen;
+    -fx-background-color: black;
 }
 .my-key-no {
     -fx-background-radius: 4;
-    -fx-background-color: black;
+    -fx-background-color: darkgrey;
 }
 .my-key-flash {
     -fx-background-radius: 4;

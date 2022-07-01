@@ -10,6 +10,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * A custom control representing the enter key in the on-screen keyboard
+ */
 public class EnterControl extends StackPane implements Initializable {
 
     @FXML

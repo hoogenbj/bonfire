@@ -3,6 +3,9 @@ package hoogenbj.wordle.lookalike;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 
+/**
+ * Two things about a letter can change: the character to display and the state. Binding is used to react when this happens.
+ */
 public class Letter {
     public enum State {
         Unknown("my-letter-box-unknown"),
