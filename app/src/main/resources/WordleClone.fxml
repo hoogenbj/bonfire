@@ -2,8 +2,8 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.*?>
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hoogenbj.wordle.lookalike.WordleLookalikeController">
-    <BorderPane stylesheets="wordle-lookalike.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hoogenbj.wordle.lookalike.WordleCloneController">
+    <BorderPane stylesheets="wordle-clone.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <top>
             <VBox fx:id="wordsContainer" spacing="4.0" BorderPane.alignment="CENTER">
             <BorderPane.margin>
@@ -12,7 +12,7 @@
             </VBox>
         </top>
       <bottom>
-          <VBox spacing="4" stylesheets="wordle-lookalike.css" BorderPane.alignment="CENTER">
+          <VBox spacing="4" stylesheets="wordle-clone.css" BorderPane.alignment="CENTER">
               <HBox alignment="CENTER" fx:id="upperRow" spacing="4">
               </HBox>
               <HBox alignment="CENTER" fx:id="middleRow" spacing="4">

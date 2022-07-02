@@ -20,7 +20,7 @@ public class WordleClone extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(this.getClass().getResource("/WordleLookalike.fxml"));
+        loader.setLocation(this.getClass().getResource("/WordleClone.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);

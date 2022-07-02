@@ -6,19 +6,19 @@
 <?import javafx.scene.text.Text?>
 
 <fx:root alignment="CENTER" spacing="4.0" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
-    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-unknown" stylesheets="@wordle-lookalike.css" fx:id="letterBox1">
+    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-unknown" stylesheets="@wordle-clone.css" fx:id="letterBox1">
         <Text strokeType="OUTSIDE" strokeWidth="0.0" fx:id="letter1" styleClass="my-letter"  />
     </StackPane>
-    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-unknown" stylesheets="@wordle-lookalike.css" fx:id="letterBox2">
+    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-unknown" stylesheets="@wordle-clone.css" fx:id="letterBox2">
         <Text strokeType="OUTSIDE" strokeWidth="0.0" fx:id="letter2" styleClass="my-letter" />
     </StackPane>
-    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-unknown" stylesheets="@wordle-lookalike.css" fx:id="letterBox3">
+    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-unknown" stylesheets="@wordle-clone.css" fx:id="letterBox3">
         <Text strokeType="OUTSIDE" strokeWidth="0.0" fx:id="letter3" styleClass="my-letter" />
     </StackPane>
-    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-unknown" stylesheets="@wordle-lookalike.css" fx:id="letterBox4">
+    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-unknown" stylesheets="@wordle-clone.css" fx:id="letterBox4">
         <Text strokeType="OUTSIDE" strokeWidth="0.0" fx:id="letter4" styleClass="my-letter" />
     </StackPane>
-    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-unknown" stylesheets="@wordle-lookalike.css" fx:id="letterBox5">
+    <StackPane minHeight="50.0" prefWidth="50.0" styleClass="my-letter-box-unknown" stylesheets="@wordle-clone.css" fx:id="letterBox5">
         <Text strokeType="OUTSIDE" strokeWidth="0.0" fx:id="letter5" styleClass="my-letter" />
     </StackPane>
 </fx:root>

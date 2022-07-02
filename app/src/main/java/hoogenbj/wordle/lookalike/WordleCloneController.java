@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class WordleLookalikeController {
+public class WordleCloneController {
     @FXML
     private VBox wordsContainer;
     @FXML
