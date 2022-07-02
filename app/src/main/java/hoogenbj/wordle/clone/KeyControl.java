@@ -1,4 +1,4 @@
-package hoogenbj.wordle.lookalike;
+package hoogenbj.wordle.clone;
 
 import javafx.animation.PauseTransition;
 import javafx.fxml.FXML;

@@ -3,6 +3,6 @@ module wordle.clone.app.main {
     requires javafx.graphics;
     requires javafx.controls;
     requires javafx.fxml;
-    exports hoogenbj.wordle.lookalike;
-    opens hoogenbj.wordle.lookalike to javafx.fxml;
+    exports hoogenbj.wordle.clone;
+    opens hoogenbj.wordle.clone to javafx.fxml;
 }

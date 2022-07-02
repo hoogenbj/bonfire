@@ -1,4 +1,4 @@
-package hoogenbj.wordle.lookalike;
+package hoogenbj.wordle.clone;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

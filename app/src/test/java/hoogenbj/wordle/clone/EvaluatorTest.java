@@ -1,4 +1,4 @@
-package hoogenbj.wordle.lookalike;
+package hoogenbj.wordle.clone;
 
 import org.junit.jupiter.api.Test;
 

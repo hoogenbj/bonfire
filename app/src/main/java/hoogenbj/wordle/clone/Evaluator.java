@@ -1,4 +1,4 @@
-package hoogenbj.wordle.lookalike;
+package hoogenbj.wordle.clone;
 
 /**
  * Checks the candidate against the target word and returns state values that can be used to provide feedback

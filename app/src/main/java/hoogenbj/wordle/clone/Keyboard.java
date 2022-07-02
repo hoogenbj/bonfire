@@ -1,4 +1,4 @@
-package hoogenbj.wordle.lookalike;
+package hoogenbj.wordle.clone;
 
 import java.util.HashMap;
 import java.util.List;
