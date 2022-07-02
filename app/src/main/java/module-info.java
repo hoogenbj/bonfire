@@ -1,4 +1,4 @@
-module wordle.helper.app.main {
+module wordle.clone.app.main {
     requires javafx.base;
     requires javafx.graphics;
     requires javafx.controls;
