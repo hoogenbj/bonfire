@@ -37,11 +37,7 @@ application {
 jlink {
     options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages', '--ignore-signing-information']
     launcher {
-        name = 'App'
-    }
-    mergedModule {
-        excludeRequires 'java.jws'
-        excludeProvides servicePattern: 'org.codehaus.stax2.*'
+        name = 'WordleClone'
     }
     jpackage {
         installerType = "dmg"
