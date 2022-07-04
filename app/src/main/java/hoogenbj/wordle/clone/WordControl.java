@@ -13,6 +13,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import static hoogenbj.wordle.clone.Animations.flip;
+
 public class WordControl extends HBox implements Initializable {
     @FXML
     private Text letter1;
@@ -71,25 +73,8 @@ public class WordControl extends HBox implements Initializable {
         });
         letter.stateProperty().addListener((observable, oldState, newState) -> {
             if (newState != null && !newState.equals(oldState)) {
-                flipTransition(box, newState);
+                flip(box, newState);
             }
         });
-    }
-
-    /**
-     * Show animation when changing a letter's state changes
-     */
-    private void flipTransition(StackPane box, Letter.State newValue) {
-        ScaleTransition disappear = new ScaleTransition(Duration.millis(300), box);
-        disappear.setFromY(1);
-        disappear.setToY(0);
-        ScaleTransition reappear = new ScaleTransition(Duration.millis(300), box);
-        reappear.setFromY(0);
-        reappear.setToY(1);
-        disappear.setOnFinished(event -> {
-            box.getStyleClass().add(newValue.getCssClass());
-            reappear.play();
-        });
-        disappear.play();
     }
 }
