@@ -30,7 +30,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'hoogenbj.wordle.lookalike.WordleClone'
+    mainClass = 'hoogenbj.wordle.clone.WordleClone'
     mainModule = 'wordle.clone.app.main'
 }
 

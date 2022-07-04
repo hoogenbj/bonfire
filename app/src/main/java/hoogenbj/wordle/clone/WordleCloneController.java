@@ -32,6 +32,8 @@ public class WordleCloneController {
     private final Keyboard keyboard = new Keyboard();
     private String targetWord;
     private Evaluator evaluator;
+    private KeyStroke enter = new KeyStroke("Enter");
+    private KeyStroke backspace = new KeyStroke("Backspace");
     private boolean finished = false;
 
     public void initialize() {
@@ -47,16 +49,29 @@ public class WordleCloneController {
 
     private void addOnScreenKeyboard() {
         keyboard.getUpper().forEach(k -> {
-            upperRow.getChildren().add(KeyControl.getInstance(k));
+            upperRow.getChildren().add(KeyControl.getInstance(k, this::keyClickEventHandler));
         });
         keyboard.getMiddle().forEach(k -> {
-            middleRow.getChildren().add(KeyControl.getInstance(k));
+            middleRow.getChildren().add(KeyControl.getInstance(k, this::keyClickEventHandler));
         });
-        lowerRow.getChildren().add(EnterControl.getInstance());
+        lowerRow.getChildren().add(EnterControl.getInstance(enter, this::enterKeyClickEventHandler));
         keyboard.getLower().forEach(k -> {
-            lowerRow.getChildren().add(KeyControl.getInstance(k));
+            lowerRow.getChildren().add(KeyControl.getInstance(k, this::keyClickEventHandler));
         });
-        lowerRow.getChildren().add(BackSpaceControl.getInstance());
+        lowerRow.getChildren().add(BackSpaceControl.getInstance(backspace, this::backspaceKeyClickEventHandler));
+    }
+
+    private void backspaceKeyClickEventHandler(KeyStroke keyStroke) {
+        handleBackspace();
+    }
+
+    private void enterKeyClickEventHandler(KeyStroke keyStroke) {
+        handleEnter();
+    }
+
+    private void keyClickEventHandler(KeyStroke keyStroke) {
+        words.get(currentWord).addLetter(keyStroke.getKey());
+        keyStroke.setState(KeyStroke.State.Typed);
     }
 
     private void prepareForWordleGame() {
@@ -99,15 +114,25 @@ public class WordleCloneController {
                 return;
             switch (event.getCode()) {
                 case BACK_SPACE -> {
-                    words.get(currentWord).removeLetter();
+                    handleBackspace();
                 }
                 case ENTER -> {
-                    if (words.get(currentWord).letterCount() == 5) {
-                        playRound();
-                    }
+                    handleEnter();
                 }
             }
         };
+    }
+
+    private void handleEnter() {
+        if (words.get(currentWord).letterCount() == 5) {
+            playRound();
+            enter.setState(KeyStroke.State.Typed);
+        }
+    }
+
+    private void handleBackspace() {
+        words.get(currentWord).removeLetter();
+        backspace.setState(KeyStroke.State.Typed);
     }
 
     private void playRound() {

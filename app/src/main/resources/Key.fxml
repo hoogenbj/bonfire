@@ -2,9 +2,8 @@
 
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Text?>
-<fx:root  xmlns="http://javafx.com/javafx"
-           xmlns:fx="http://javafx.com/fxml" type="javafx.scene.layout.StackPane"
-          prefHeight="50.0" prefWidth="40.0" styleClass="my-key-unknown" stylesheets="@wordle-clone.css">
-    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="my-key" fx:id="keyText">
+
+<fx:root prefHeight="50.0" prefWidth="40.0" styleClass="my-key-unknown" stylesheets="@wordle-clone.css" type="javafx.scene.layout.StackPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+    <Text fx:id="keyText" onMouseClicked="#onKeyClick" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="my-key">
     </Text>
 </fx:root>
